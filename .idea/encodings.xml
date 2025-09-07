@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/design-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/design-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-learning/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-learning/src/main/java/cn/geekslife/learning/java/aqs/ratelimiter/algorithm/RateLimiterAlgorithm.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-learning/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-redis-learning/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-redis-learning/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-redis-learning/src/test/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/multi-thread-design-pattern/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/multi-thread-design-pattern/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc-learning/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

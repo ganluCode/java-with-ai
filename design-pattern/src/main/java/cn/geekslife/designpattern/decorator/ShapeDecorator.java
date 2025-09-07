@@ -1,0 +1,22 @@
+package cn.geekslife.designpattern.decorator;
+
+/**
+ * 图形装饰器抽象类 - 装饰器
+ */
+public abstract class ShapeDecorator implements Shape {
+    protected Shape shape;
+    
+    public ShapeDecorator(Shape shape) {
+        this.shape = shape;
+    }
+    
+    @Override
+    public void draw() {
+        shape.draw();
+    }
+    
+    @Override
+    public double getArea() {
+        return shape.getArea();
+    }
+}

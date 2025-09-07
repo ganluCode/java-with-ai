@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(mvn compile:*)",
+      "Bash(mvn test-compile:*)",
+      "Bash(mvn exec:java:*)",
+      "Bash(mvn clean compile:*)",
+      "Bash(mvn test:*)",
+      "Bash(mkdir:*)",
+      "WebFetch(domain:mermaid.js.org)",
+      "WebFetch(domain:mermaid-js.github.io)",
+      "Bash(sed:*)",
+      "Bash(./gradlew test:*)",
+      "Bash(mvn surefire:test:*)",
+      "Bash(mvn clean test:*)",
+      "WebFetch(domain:lettuce.io)",
+      "Bash(cat:*)",
+      "Read(//Users/ganlu/.m2/repository/**)",
+      "Bash(mvn dependency:sources:*)",
+      "WebFetch(domain:nacos.io)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
