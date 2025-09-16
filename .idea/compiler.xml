@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="design-pattern" />
-        <module name="rpc-learning" />
-        <module name="java-learning" />
-        <module name="java-redis-learning" />
-        <module name="multi-thread-design-pattern" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="java-learning" target="17" />
+      <module name="java-redis-learning" target="17" />
+      <module name="multi-thread-design-pattern" target="11" />
+      <module name="rpc-learning" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

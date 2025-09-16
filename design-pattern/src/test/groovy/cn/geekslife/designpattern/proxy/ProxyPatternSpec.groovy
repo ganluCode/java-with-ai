@@ -9,27 +9,27 @@ class ProxyPatternSpec extends Specification {
     
     def "所有代理类型都应该实现相同的接口"() {
         given:
-        com.example.proxy.Subject virtualProxy = new com.example.proxy.VirtualProxy()
-        com.example.proxy.Subject protectionProxy = new com.example.proxy.ProtectionProxy("admin")
-        com.example.proxy.Subject smartProxy = new com.example.proxy.SmartReferenceProxy()
-        com.example.proxy.Subject cacheProxy = new com.example.proxy.CacheProxy()
-        com.example.proxy.Subject loggingProxy = new com.example.proxy.LoggingProxy()
+        Subject virtualProxy = new VirtualProxy()
+        Subject protectionProxy = new ProtectionProxy("admin")
+        Subject smartProxy = new SmartReferenceProxy()
+        Subject cacheProxy = new CacheProxy()
+        Subject loggingProxy = new LoggingProxy()
         
         expect:
-        virtualProxy instanceof com.example.proxy.Subject
-        protectionProxy instanceof com.example.proxy.Subject
-        smartProxy instanceof com.example.proxy.Subject
-        cacheProxy instanceof com.example.proxy.Subject
-        loggingProxy instanceof com.example.proxy.Subject
+        virtualProxy instanceof Subject
+        protectionProxy instanceof Subject
+        smartProxy instanceof Subject
+        cacheProxy instanceof Subject
+        loggingProxy instanceof Subject
     }
     
     def "所有代理都应该能够处理请求"() {
         given:
-        com.example.proxy.Subject virtualProxy = new com.example.proxy.VirtualProxy()
-        com.example.proxy.Subject protectionProxy = new com.example.proxy.ProtectionProxy("admin")
-        com.example.proxy.Subject smartProxy = new com.example.proxy.SmartReferenceProxy()
-        com.example.proxy.Subject cacheProxy = new com.example.proxy.CacheProxy()
-        com.example.proxy.Subject loggingProxy = new com.example.proxy.LoggingProxy()
+        Subject virtualProxy = new VirtualProxy()
+        Subject protectionProxy = new ProtectionProxy("admin")
+        Subject smartProxy = new SmartReferenceProxy()
+        Subject cacheProxy = new CacheProxy()
+        Subject loggingProxy = new LoggingProxy()
         
         when:
         virtualProxy.request()
@@ -45,11 +45,11 @@ class ProxyPatternSpec extends Specification {
     
     def "所有代理都应该能够返回数据"() {
         given:
-        com.example.proxy.Subject virtualProxy = new com.example.proxy.VirtualProxy()
-        com.example.proxy.Subject protectionProxy = new com.example.proxy.ProtectionProxy("admin")
-        com.example.proxy.Subject smartProxy = new com.example.proxy.SmartReferenceProxy()
-        com.example.proxy.Subject cacheProxy = new com.example.proxy.CacheProxy()
-        com.example.proxy.Subject loggingProxy = new com.example.proxy.LoggingProxy()
+        Subject virtualProxy = new VirtualProxy()
+        Subject protectionProxy = new ProtectionProxy("admin")
+        Subject smartProxy = new SmartReferenceProxy()
+        Subject cacheProxy = new CacheProxy()
+        Subject loggingProxy = new LoggingProxy()
         
         when:
         String virtualData = virtualProxy.getData()

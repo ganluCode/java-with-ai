@@ -9,7 +9,7 @@ class VirtualProxySpec extends Specification {
     
     def "应该能够创建虚拟代理实例"() {
         given:
-        com.example.proxy.VirtualProxy proxy = new com.example.proxy.VirtualProxy()
+        VirtualProxy proxy = new VirtualProxy()
         
         expect:
         proxy != null
@@ -17,11 +17,11 @@ class VirtualProxySpec extends Specification {
     
     def "虚拟代理应该延迟创建真实对象"() {
         given:
-        com.example.proxy.VirtualProxy proxy = new com.example.proxy.VirtualProxy()
+        VirtualProxy proxy = new VirtualProxy()
         
         when:
         // 通过反射检查真实对象是否为null
-        def realSubjectField = com.example.proxy.VirtualProxy.getDeclaredField("realSubject")
+        def realSubjectField = VirtualProxy.getDeclaredField("realSubject")
         realSubjectField.setAccessible(true)
         def realSubject = realSubjectField.get(proxy)
         
@@ -31,7 +31,7 @@ class VirtualProxySpec extends Specification {
     
     def "虚拟代理应该在需要时创建真实对象"() {
         given:
-        com.example.proxy.VirtualProxy proxy = new com.example.proxy.VirtualProxy()
+        VirtualProxy proxy = new VirtualProxy()
         
         when:
         proxy.request()
@@ -43,7 +43,7 @@ class VirtualProxySpec extends Specification {
     
     def "虚拟代理应该正确返回数据"() {
         given:
-        com.example.proxy.VirtualProxy proxy = new com.example.proxy.VirtualProxy()
+        VirtualProxy proxy = new VirtualProxy()
         
         when:
         String data = proxy.getData()
