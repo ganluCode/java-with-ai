@@ -1,7 +1,5 @@
 autoDetectedPackages:
-- cn.geekslife
-- com.example.redis
-- com.redis.bloomfilter
+- cn.geekslife.designpattern
 enableAutoDetect: true
 entryDisplayConfig:
   excludedPathPatterns: []
