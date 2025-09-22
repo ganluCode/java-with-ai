@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cn.geekslife.designpattern.singleton.SingletonTest" time="0.047" tests="11" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="socksProxyHost" value="127.0.0.1"/>
+    <property name="http.proxyHost" value="127.0.0.1"/>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/ganlu/Documents/my-dev/code/mygit/java-with-ai/design-pattern/target/test-classes:/Users/ganlu/Documents/my-dev/code/mygit/java-with-ai/design-pattern/target/classes:/Users/ganlu/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar:/Users/ganlu/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/ganlu/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/ganlu/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/ganlu/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ganlu/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/ganlu/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/Users/ganlu/.m2/repository/org/spockframework/spock-core/2.3-groovy-3.0/spock-core-2.3-groovy-3.0.jar:/Users/ganlu/.m2/repository/org/junit/platform/junit-platform-engine/1.9.0/junit-platform-engine-1.9.0.jar:/Users/ganlu/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/ganlu/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/ganlu/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/ganlu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.9/byte-buddy-agent-1.14.9.jar:/Users/ganlu/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/ganlu/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/ganlu/.m2/repository/org/codehaus/groovy/groovy/3.0.17/groovy-3.0.17.jar:"/>
+    <property name="https.proxyPort" value="7890"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="http://www.azul.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.boot.library.path" value="/Users/ganlu/Library/Java/JavaVirtualMachines/azul-21.0.7/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/ganlu/Documents/my-dev/code/mygit/java-with-ai/design-pattern/target/surefire/surefirebooter10255108386306244969.jar /Users/ganlu/Documents/my-dev/code/mygit/java-with-ai/design-pattern/target/surefire 2025-09-22T15-31-32_515-jvmRun1 surefire10500062659575454665tmp surefire_01850575048846453949tmp"/>
+    <property name="http.nonProxyHosts" value="127.0.0.1|localhost|*.localhost|&lt;local&gt;|*.&lt;local&gt;"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/ganlu/Documents/my-dev/code/mygit/java-with-ai/design-pattern/target/test-classes:/Users/ganlu/Documents/my-dev/code/mygit/java-with-ai/design-pattern/target/classes:/Users/ganlu/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.1/junit-jupiter-5.8.1.jar:/Users/ganlu/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/ganlu/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/ganlu/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/ganlu/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ganlu/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/ganlu/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/Users/ganlu/.m2/repository/org/spockframework/spock-core/2.3-groovy-3.0/spock-core-2.3-groovy-3.0.jar:/Users/ganlu/.m2/repository/org/junit/platform/junit-platform-engine/1.9.0/junit-platform-engine-1.9.0.jar:/Users/ganlu/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/Users/ganlu/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/Users/ganlu/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/ganlu/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.9/byte-buddy-agent-1.14.9.jar:/Users/ganlu/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/ganlu/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/Users/ganlu/.m2/repository/org/codehaus/groovy/groovy/3.0.17/groovy-3.0.17.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/ganlu"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/Users/ganlu/Library/Java/JavaVirtualMachines/azul-21.0.7/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="https.proxyHost" value="127.0.0.1"/>
+    <property name="basedir" value="/Users/ganlu/Documents/my-dev/code/mygit/java-with-ai/design-pattern"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/ganlu/Documents/my-dev/code/mygit/java-with-ai/design-pattern/target/surefire/surefirebooter10255108386306244969.jar"/>
+    <property name="user.script" value="Hans"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="127.0.0.1|localhost|*.localhost|&lt;local&gt;|*.&lt;local&gt;"/>
+    <property name="java.runtime.version" value="21.0.7+6-LTS"/>
+    <property name="user.name" value="ganlu"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.6.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Zulu21.42+19-CA"/>
+    <property name="localRepository" value="/Users/ganlu/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azul.com/support/"/>
+    <property name="java.io.tmpdir" value="/var/folders/03/09x81qt13yv6wjcklmvcs82m0000gn/T/"/>
+    <property name="idea.version" value="2024.3.6"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/Users/ganlu/Documents/my-dev/code/mygit/java-with-ai/design-pattern"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="socksProxyPort" value="7890"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ganlu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="21.0.7+6-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="127.0.0.1|localhost|*.localhost|&lt;local&gt;|*.&lt;local&gt;"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="http.proxyPort" value="7890"/>
+  </properties>
+  <testcase name="testPerformance" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0.012">
+    <system-out><![CDATA[饿汉式单例耗时: 4038250 ns
+双重检查锁定单例耗时: 3940625 ns
+静态内部类单例耗时: 3050500 ns
+]]></system-out>
+  </testcase>
+  <testcase name="testLazySingleton" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0.001">
+    <system-out><![CDATA[懒汉式单例执行业务逻辑
+]]></system-out>
+  </testcase>
+  <testcase name="testStaticInnerClassSingletonInMultiThread" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0.007"/>
+  <testcase name="testThreadSafeLazySingleton" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0.001">
+    <system-out><![CDATA[线程安全懒汉式单例执行业务逻辑
+]]></system-out>
+  </testcase>
+  <testcase name="testEagerSingleton" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0.001">
+    <system-out><![CDATA[饿汉式单例执行业务逻辑
+]]></system-out>
+  </testcase>
+  <testcase name="testEnumSingleton" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0">
+    <system-out><![CDATA[枚举单例执行业务逻辑
+枚举单例执行其他业务逻辑
+]]></system-out>
+  </testcase>
+  <testcase name="testSerializationProtection" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0.013"/>
+  <testcase name="testDoubleCheckedLockingSingleton" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0">
+    <system-out><![CDATA[双重检查锁定单例执行业务逻辑
+]]></system-out>
+  </testcase>
+  <testcase name="testDoubleCheckedLockingSingletonInMultiThread" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0.006"/>
+  <testcase name="testStaticInnerClassSingleton" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0">
+    <system-out><![CDATA[静态内部类单例执行业务逻辑
+]]></system-out>
+  </testcase>
+  <testcase name="testReflectionAttackProtection" classname="cn.geekslife.designpattern.singleton.SingletonTest" time="0.001"/>
+</testsuite>

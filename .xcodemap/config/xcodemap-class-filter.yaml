@@ -1,18 +1,7 @@
 autoDetectedPackages:
 - cn.geekslife
-- com.example.command
-- com.example.flyweight
-- com.example.interpreter
-- com.example.iterator
-- com.example.mediator
-- com.example.memento
-- com.example.proxy
 - com.example.redis
 - com.redis.bloomfilter
-- observer
-- state
-- strategy
-- template
 enableAutoDetect: true
 entryDisplayConfig:
   excludedPathPatterns: []

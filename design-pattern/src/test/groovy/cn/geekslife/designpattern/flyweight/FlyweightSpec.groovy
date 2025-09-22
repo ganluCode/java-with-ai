@@ -2,8 +2,6 @@ package cn.geekslife.designpattern.flyweight
 
 import spock.lang.Specification
 import spock.lang.Subject
-import spock.lang.Shared
-import spock.lang.Unroll
 
 /**
  * 享元模式测试类
@@ -11,15 +9,15 @@ import spock.lang.Unroll
 class FlyweightSpec extends Specification {
     
     @Subject
-    com.example.flyweight.FlyweightFactory factory
+    FlyweightFactory factory
     
     def setup() {
-        factory = new com.example.flyweight.FlyweightFactory()
+        factory = new FlyweightFactory()
     }
     
     def "应该能够创建享元工厂实例"() {
         given:
-        com.example.flyweight.FlyweightFactory factory = new com.example.flyweight.FlyweightFactory()
+        FlyweightFactory factory = new FlyweightFactory()
         
         expect:
         factory != null
@@ -30,20 +28,20 @@ class FlyweightSpec extends Specification {
         String key = "testKey"
         
         when:
-        com.example.flyweight.Flyweight flyweight = factory.getFlyweight(key)
+        Flyweight flyweight = factory.getFlyweight(key)
         
         then:
         flyweight != null
-        flyweight instanceof com.example.flyweight.ConcreteFlyweight
+        flyweight instanceof ConcreteFlyweight
     }
     
     def "应该能够复用相同的享元对象"() {
         given:
         String key = "sharedKey"
-        com.example.flyweight.Flyweight flyweight1 = factory.getFlyweight(key)
+        Flyweight flyweight1 = factory.getFlyweight(key)
         
         when:
-        com.example.flyweight.Flyweight flyweight2 = factory.getFlyweight(key)
+        Flyweight flyweight2 = factory.getFlyweight(key)
         
         then:
         flyweight1.is(flyweight2)  // 检查是否是同一个对象实例
@@ -63,7 +61,7 @@ class FlyweightSpec extends Specification {
         given:
         String intrinsicState = "内部状态"
         String extrinsicState = "外部状态"
-        com.example.flyweight.ConcreteFlyweight flyweight = new com.example.flyweight.ConcreteFlyweight(intrinsicState)
+        ConcreteFlyweight flyweight = new ConcreteFlyweight(intrinsicState)
         
         when:
         flyweight.operation(extrinsicState)
@@ -77,7 +75,7 @@ class FlyweightSpec extends Specification {
         given:
         String allState = "全部状态"
         String extrinsicState = "外部状态"
-        com.example.flyweight.UnsharedConcreteFlyweight flyweight = new com.example.flyweight.UnsharedConcreteFlyweight(allState)
+        UnsharedConcreteFlyweight flyweight = new UnsharedConcreteFlyweight(allState)
         
         when:
         flyweight.operation(extrinsicState)

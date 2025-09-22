@@ -9,7 +9,7 @@ class SmartReferenceProxySpec extends Specification {
     
     def "应该能够创建智能引用代理实例"() {
         given:
-        com.example.proxy.SmartReferenceProxy proxy = new com.example.proxy.SmartReferenceProxy()
+        SmartReferenceProxy proxy = new SmartReferenceProxy()
         
         expect:
         proxy != null
@@ -17,7 +17,7 @@ class SmartReferenceProxySpec extends Specification {
     
     def "智能引用代理应该正确计数访问次数"() {
         given:
-        com.example.proxy.SmartReferenceProxy proxy = new com.example.proxy.SmartReferenceProxy()
+        SmartReferenceProxy proxy = new SmartReferenceProxy()
         
         when:
         proxy.request()
@@ -30,7 +30,7 @@ class SmartReferenceProxySpec extends Specification {
     
     def "智能引用代理应该正确返回数据"() {
         given:
-        com.example.proxy.SmartReferenceProxy proxy = new com.example.proxy.SmartReferenceProxy()
+        SmartReferenceProxy proxy = new SmartReferenceProxy()
         
         when:
         String data = proxy.getData()

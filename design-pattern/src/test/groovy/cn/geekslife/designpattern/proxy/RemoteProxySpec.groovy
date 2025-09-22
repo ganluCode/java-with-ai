@@ -9,7 +9,7 @@ class RemoteProxySpec extends Specification {
     
     def "应该能够创建远程代理实例"() {
         given:
-        com.example.proxy.RemoteProxy proxy = new com.example.proxy.RemoteProxy()
+        RemoteProxy proxy = new RemoteProxy()
         
         expect:
         proxy != null
@@ -17,7 +17,7 @@ class RemoteProxySpec extends Specification {
     
     def "远程代理应该正确处理远程请求"() {
         given:
-        com.example.proxy.RemoteProxy proxy = new com.example.proxy.RemoteProxy()
+        RemoteProxy proxy = new RemoteProxy()
         
         when:
         proxy.remoteRequest()
@@ -29,7 +29,7 @@ class RemoteProxySpec extends Specification {
     
     def "远程代理应该正确获取远程数据"() {
         given:
-        com.example.proxy.RemoteProxy proxy = new com.example.proxy.RemoteProxy()
+        RemoteProxy proxy = new RemoteProxy()
         
         when:
         String data = proxy.getRemoteData()

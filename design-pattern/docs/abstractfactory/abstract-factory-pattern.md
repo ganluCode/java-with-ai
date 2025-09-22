@@ -17,7 +17,7 @@ classDiagram
     Client --> AbstractFactory
     Client --> AbstractProductA
     Client --> AbstractProductB
-    AbstractFactory <|-- ConcreteFactory1
+AbstractFactory <|-- ConcreteFactory1
     AbstractFactory <|-- ConcreteFactory2
     AbstractProductA <|-- ProductA1
     AbstractProductA <|-- ProductA2

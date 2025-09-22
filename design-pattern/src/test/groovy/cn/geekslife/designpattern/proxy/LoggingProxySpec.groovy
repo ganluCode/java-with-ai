@@ -9,7 +9,7 @@ class LoggingProxySpec extends Specification {
     
     def "应该能够创建日志代理实例"() {
         given:
-        com.example.proxy.LoggingProxy proxy = new com.example.proxy.LoggingProxy()
+        LoggingProxy proxy = new LoggingProxy()
         
         expect:
         proxy != null
@@ -17,7 +17,7 @@ class LoggingProxySpec extends Specification {
     
     def "日志代理应该正确处理请求方法"() {
         given:
-        com.example.proxy.LoggingProxy proxy = new com.example.proxy.LoggingProxy()
+        LoggingProxy proxy = new LoggingProxy()
         
         when:
         proxy.request()
@@ -29,7 +29,7 @@ class LoggingProxySpec extends Specification {
     
     def "日志代理应该正确返回数据"() {
         given:
-        com.example.proxy.LoggingProxy proxy = new com.example.proxy.LoggingProxy()
+        LoggingProxy proxy = new LoggingProxy()
         
         when:
         String data = proxy.getData()
