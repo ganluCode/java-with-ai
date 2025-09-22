@@ -7,10 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="design-pattern" />
+        <module name="java-learning" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="java-learning" target="17" />
       <module name="java-redis-learning" target="17" />
       <module name="multi-thread-design-pattern" target="11" />
       <module name="rpc-learning" target="17" />

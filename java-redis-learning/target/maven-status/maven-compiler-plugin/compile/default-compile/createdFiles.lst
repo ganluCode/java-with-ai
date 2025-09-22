@@ -10,6 +10,7 @@ com/example/redis/lock/RedisPubSubExample$ChatParticipant.class
 com/example/redis/lock/LockManager.class
 com/example/redis/lock/RenewalManager.class
 com/example/redis/lock/RedisPubSubExample$2.class
+com/redis/bloomfilter/RedisBloomFilter.class
 com/example/redis/lock/RedisPubSubExample$ChatParticipant$1.class
 com/example/redis/lock/RedisDistributedLock.class
 com/example/redis/client/LettuceRedisClient.class
@@ -18,4 +19,5 @@ com/example/redis/config/RedisConfig.class
 com/example/redis/lock/DistributedLockExample.class
 com/example/redis/lock/LockConfig.class
 com/example/redis/client/LettuceRedisClientExample.class
+com/redis/bloomfilter/LettuceRedisTemplate.class
 com/example/redis/lock/LettuceClient.class

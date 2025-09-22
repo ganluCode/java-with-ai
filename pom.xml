@@ -29,10 +29,10 @@
 
     <modules>
         <module>design-pattern</module>
-<!--        <module>java-learning</module>-->
-<!--        <module>java-redis-learning</module>-->
-<!--        <module>multi-thread-design-pattern</module>-->
-<!--        <module>rpc-learning</module>-->
+        <module>java-learning</module>
+        <module>java-redis-learning</module>
+        <module>multi-thread-design-pattern</module>
+        <module>rpc-learning</module>
     </modules>
 
     <!-- 依赖管理 -->

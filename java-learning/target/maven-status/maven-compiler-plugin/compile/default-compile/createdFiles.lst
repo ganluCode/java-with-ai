@@ -1,7 +1,6 @@
 cn/geekslife/learning/java/aqs/ratelimiter/AQSRateLimiter$AlgorithmType.class
 cn/geekslife/learning/java/aqs/ratelimiter/algorithm/TokenBucketAlgorithm.class
 cn/geekslife/learning/java/aqs/ratelimiter/AQSRateLimiter.class
-cn/geekslife/learning/java/aqs/ratelimiter/AQSRateLimiter$1.class
 cn/geekslife/learning/java/aqs/ratelimiter/RateLimiter.class
 cn/geekslife/learning/java/aqs/ratelimiter/algorithm/RateLimiterAlgorithm.class
 cn/geekslife/App.class
